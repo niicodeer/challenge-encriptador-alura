@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador Alura</title>
+  </head>
+  <body>
+    <header>
+      <nav><img src="./assets/Alura.png" class="header__logo" /></nav>
+    </header>
+    <main>
+      <section class="seccion__encriptar">
+        <div class="input-container">
+          <textarea
+            placeholder="Ingrese el texto aqui"
+            id="input-area"
+            class="input-area"
+            autofocus
+          ></textarea>
+        </div>
+        <div>
+          <div class="info__container">
+            <img src="./assets/info.png" class="info__img" /><span
+              >Solo letras minusculas y sin acentos</span
+            >
+          </div>
+          <div class="btn__container">
+            <button class="primary-btn" id="primary-btn">Encriptar</button>
+            <button class="secondary-btn" id="secondary-btn">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="seccion__desencriptar">
+        <div class="output-container" id="output-container">
+          <div id="output__notext-container">
+            <img src="./assets/aside-image.png" class="output__image" />
+            <h2 class="output__title">Ningún mensaje fue encontrado</h2>
+            <p class="output__text">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+
+          <p id="output-area"></p>
+          <button class="output__btncopy" id="output__btncopy">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer__text">
+        Desarrollado por
+        <span>
+          <a href="https:\\www.linkedin.com/in/nico-radin" target="_bl_blank">
+            Nico Radin 😉
+          </a>
+          </span
+        >
+        - Un challenge propuesto por el programa ONE 5 - Alura
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
